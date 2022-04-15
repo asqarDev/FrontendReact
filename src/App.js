@@ -1,5 +1,5 @@
 import "./App.css";
-import About from "./Components/About";
+
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Home from "./Components/Home";
@@ -12,6 +12,7 @@ import {
   BrowserRouter,
   Routes,
 } from "react-router-dom";
+import { About } from "./Components/About";
 function App() {
   return (
     <BrowserRouter>
