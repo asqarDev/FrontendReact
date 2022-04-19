@@ -1,0 +1,18 @@
+.site-card-border-less-wrapper {
+    padding: 30px;
+    background: #ececec;
+  }
+
+
+  .example {
+    margin: 20px 0;
+    margin-bottom: 20px;
+    padding: 30px 50px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+  }
+
+  .antdicons{
+      font-size: 30px;
+  }

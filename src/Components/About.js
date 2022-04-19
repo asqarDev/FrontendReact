@@ -1,5 +1,15 @@
 import React, { useState } from "react";
 import dateFormat from "dateformat";
+
+import {
+  Card,
+  CardBody,
+  CardSubtitle,
+  CardText,
+  CardTitle,
+  Button,
+} from "reactstrap";
+
 export const About = () => {
   const [count, setCount] = useState(0);
 
@@ -19,9 +29,7 @@ export const About = () => {
       <div className="row">
         <div className="col-lg-6">
           <div className="card p-4">
-            <div className="card-header">
-                {dateFormat()}
-            </div>
+            <div className="card-header">{dateFormat()}</div>
             <h3 className="text-center">{count}</h3>
             <div className="card-body d-flex justify-content-between">
               <button className="btn btn-success" onClick={handleMinus}>
@@ -37,6 +45,23 @@ export const About = () => {
           </div>
         </div>
       </div>
+
+      <Card>
+        <CardBody>
+          <CardTitle tag="h5">Card title</CardTitle>
+          <CardSubtitle className="mb-2 text-muted" tag="h6">
+            Card subtitle
+          </CardSubtitle>
+          <CardText>
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </CardText>
+          <Button color="danger">Button</Button>
+          <Button color="danger" outline>
+            Button outline
+          </Button>
+        </CardBody>
+      </Card>
     </div>
   );
 };
